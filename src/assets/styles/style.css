@@ -1,0 +1,209 @@
+body{
+    background-color: #def;
+    margin: 0;
+    padding: 0;
+}
+.App{
+   height: 100%;
+}
+.navbar{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    left: 5.5%;
+    z-index: 100;
+}
+.navbar .list{
+    display: flex;
+    margin-right: 6rem;
+    list-style: none;
+}
+.navbar .list {
+    padding: 10px;
+    width: auto;
+}
+.navbar .list li{
+    padding: 10px;
+}
+.navbar .list .arrow:hover{
+    border-bottom: none;
+   
+}
+
+.navbar .list li a:hover{
+ border-bottom: 1px solid black;
+}
+
+.navbar .list  .img_profile{
+    border-radius: 50%;
+    width: 70px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../static/no_photo1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.principal h1{
+    position: relative;
+    top: 6rem;
+    height: 50px;
+    margin: 0% 4% 0% 5%;
+    padding: 0.5em;
+    background-color: white;
+    font-size: 2.5rem;
+    color: #568;
+    left: 2%;
+}
+.principal .principal_info h1{
+    position: relative;
+    top: 1rem;
+    margin: 0% 4% 0% 5%;
+    padding: 2em;
+    background-color: white;
+    font-size: 2.5rem;
+    color: #568;
+}
+.principal .principal_info{
+    position: relative;
+    top: 7rem;
+    margin: 0% 2% 0% 7%;
+    padding: 2em;
+    background-color: white;
+    color: #568;
+}
+.principal .anuncios_c{
+    position: relative;
+    border: 0.5px solid #ccc;
+}
+.principal .anuncios_c figure{ 
+    width: 90%;
+    margin-top: 60px;
+}
+.principal .anuncios_c img{ 
+    width: 100%;
+}
+
+.principal .anuncios span{
+    border-radius: 50%;
+    width: 70px;
+    height: 50px;
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../static/no_photo1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.principal .anuncios p{
+    font-size: 1rem;
+}
+.principal .principal_info .principal_search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal .principal_info .principal_search span{
+     background-color: #5af;
+}
+
+.menuarrow{
+    background-color: white;
+    border-radius: 3px;
+    flex-direction: column;
+    position: absolute;
+    border: 0.1px solid #555;
+    left: 75%;
+    width: 15%;
+    top: 100%;
+}
+.menuarrow .menuarrow_container .list{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+}
+.menuarrow .menuarrow_container .list li{
+    padding: 10px 0px;
+    width: 100%;
+}
+.menuarrow .menuarrow_container .list li:hover{
+    cursor: pointer;
+}
+.menuarrow .menuarrow_container .list li:nth-child(7){
+    border-top: 1px solid black;
+}
+.menuarrow .menuarrow_container .list li:nth-child(1){
+    border-bottom: 1px solid black;
+}
+.menuarrow .menuarrow_container .list li a{
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+    width: 100%;
+    
+}
+.menuarrow .menuarrow_container .list li:hover{
+    color: #5af;
+}
+
+.lateralmenu_container .icon_hamburguer{
+    height: 70px;
+    width: 70px;
+    margin-left: -16px;
+    padding: 16px 9px 0 9px;
+    background-color: #272c33;
+}
+.lateralmenu_list{
+    position: fixed;
+    top: 70px;
+    height: calc(100% - 50px - 50px);
+    width: 70px;
+    margin-left: -16px;
+    padding: 16px 9px 0 9px;
+    background-color: #272c33;
+    z-index: 1;
+}
+.lateralmenu_list li:hover{
+ background-color: #5df;
+}
+
+.view{
+    display: none;
+}
+.rotate{
+    transform: rotate(180deg);
+}
+
+.lateralmenu_container {
+    list-style: none; 
+    position: fixed;
+}
+.icon_hamburguer{
+    text-align: center;
+}
+.lateralmenu_container .lateralmenu_list{
+    text-align: center;
+}
+
+.lateralmenu_container  li{
+    border: none;
+    width: 100%;
+    display: inherit;
+    border-radius: 0;
+    padding: 0.75rem 0.5rem;
+}
